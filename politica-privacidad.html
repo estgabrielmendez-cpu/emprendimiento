@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad | Méndez Soluciones</title>
+<meta name="description" content="Política de Privacidad de Méndez Soluciones: qué información trata el sitio, con qué finalidad, quién la recibe y cómo ejercer tus derechos.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Méndez Soluciones">
+<link rel="icon" type="image/png" href="image/logomio.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   MÉNDEZ SOLUCIONES — POLÍTICA DE PRIVACIDAD
+   Identidad: negro + morado. Todo en un único archivo.
+   ============================================================ */
+
+:root{
+  --color-bg:#000000;
+  --color-bg-secondary:#0a0a0a;
+  --color-bg-tertiary:#111111;
+  --color-surface:#1a1a1a;
+  --color-primary:#7c3aed;
+  --color-primary-light:#a855f7;
+  --color-primary-rgb:124,58,237;
+  --color-text:#ffffff;
+  --color-text-secondary:#a1a1aa;
+  --color-text-muted:#71717a;
+  --color-border:rgba(255,255,255,.07);
+  --color-border-strong:rgba(124,58,237,.28);
+  --color-warn:#f59e0b;
+  --gradient-primary:linear-gradient(135deg,#7c3aed 0%,#a855f7 100%);
+  --radius-md:.5rem;
+  --radius-lg:.75rem;
+  --radius-xl:1rem;
+  --radius-2xl:1.5rem;
+  --radius-full:9999px;
+  --maxw:920px;
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{
+  scroll-behavior:smooth;
+  -webkit-text-size-adjust:100%;
+  font-size:16px;
+}
+
+body{
+  font-family:var(--font);
+  font-size:1rem;
+  line-height:1.75;
+  color:var(--color-text);
+  background:var(--color-bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+
+/* Halo ambiental sutil, coherente con la marca */
+body::before{
+  content:'';
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:
+    radial-gradient(760px circle at 12% -8%, rgba(124,58,237,.16), transparent 62%),
+    radial-gradient(620px circle at 92% 6%, rgba(168,85,247,.085), transparent 58%),
+    radial-gradient(700px circle at 50% 108%, rgba(124,58,237,.07), transparent 62%);
+}
+
+img{max-width:100%;display:block}
+
+a{color:var(--color-primary-light);text-decoration:none;transition:color .18s ease}
+a:hover{color:#c4b5fd;text-decoration:underline}
+
+:focus-visible{
+  outline:2px solid var(--color-primary-light);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.skip-link{
+  position:absolute;top:-120px;left:16px;z-index:999;
+  background:var(--color-primary);color:#fff;
+  padding:.65rem 1rem;border-radius:var(--radius-md);
+  font-weight:600;font-size:.9rem;text-decoration:none;
+}
+.skip-link:focus{top:16px;color:#fff;text-decoration:none}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+
+/* ---------- Encabezado ---------- */
+.site-header{
+  position:relative;
+  padding:2.25rem 0 2.75rem;
+  border-bottom:1px solid var(--color-border);
+}
+.header-top{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;margin-bottom:2.25rem;
+}
+.brand{
+  display:inline-flex;align-items:center;gap:.7rem;
+  color:#fff;text-decoration:none;font-weight:700;
+}
+.brand:hover{color:#fff;text-decoration:none;opacity:.9}
+.brand img{height:38px;width:auto;object-fit:contain}
+.brand span{font-size:1.1rem;letter-spacing:-.02em}
+
+.back-top{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.82rem;font-weight:500;
+  color:var(--color-text-secondary);text-decoration:none;
+  padding:.5rem .95rem;border-radius:var(--radius-full);
+  border:1px solid var(--color-border);
+  background:rgba(255,255,255,.02);
+  transition:border-color .2s ease,color .2s ease,background .2s ease;
+}
+.back-top:hover{
+  color:#fff;text-decoration:none;
+  border-color:var(--color-border-strong);
+  background:rgba(124,58,237,.07);
+}
+.back-top svg{width:15px;height:15px;flex-shrink:0}
+
+.tag{
+  display:inline-block;
+  padding:.22rem .75rem;
+  margin-bottom:1rem;
+  border-radius:var(--radius-full);
+  background:rgba(124,58,237,.1);
+  border:1px solid rgba(124,58,237,.22);
+  color:var(--color-primary-light);
+  font-size:.72rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;
+}
+
+h1{
+  font-size:clamp(1.9rem,5vw,2.9rem);
+  font-weight:800;
+  line-height:1.15;
+  letter-spacing:-.03em;
+  margin-bottom:1rem;
+}
+h1 .grad{
+  background:var(--gradient-primary);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.lead{
+  font-size:1.02rem;
+  color:var(--color-text-secondary);
+  max-width:66ch;
+}
+.meta{
+  margin-top:1.5rem;
+  font-size:.8rem;
+  color:var(--color-text-muted);
+}
+.meta strong{color:var(--color-text-secondary);font-weight:600}
+
+/* ---------- Índice ---------- */
+.toc{
+  margin:2.75rem 0 0;
+  padding:1.6rem 1.5rem;
+  background:linear-gradient(150deg,rgba(124,58,237,.07),rgba(255,255,255,.012));
+  border:1px solid var(--color-border-strong);
+  border-radius:var(--radius-2xl);
+}
+.toc h2{
+  font-size:.74rem;font-weight:700;
+  letter-spacing:.12em;text-transform:uppercase;
+  color:var(--color-primary-light);
+  margin-bottom:1rem;
+}
+.toc ol{
+  list-style:none;
+  counter-reset:toc;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.35rem .9rem;
+}
+.toc li{counter-increment:toc;min-width:0}
+.toc a{
+  display:flex;gap:.55rem;
+  font-size:.87rem;
+  color:var(--color-text-secondary);
+  padding:.32rem .4rem;
+  border-radius:var(--radius-md);
+  text-decoration:none;
+  transition:color .16s ease,background .16s ease;
+}
+.toc a::before{
+  content:counter(toc,decimal-leading-zero);
+  color:var(--color-text-muted);
+  font-size:.74rem;
+  font-weight:700;
+  flex-shrink:0;
+  padding-top:.15rem;
+}
+.toc a:hover{color:#fff;background:rgba(124,58,237,.09);text-decoration:none}
+.toc a.is-active{color:#fff;background:rgba(124,58,237,.14)}
+.toc a.is-active::before{color:var(--color-primary-light)}
+
+/* ---------- Contenido ---------- */
+main{padding:3.25rem 0 1rem}
+
+.doc-section{
+  padding:2rem 0;
+  border-bottom:1px solid var(--color-border);
+  scroll-margin-top:1.5rem;
+}
+.doc-section:last-of-type{border-bottom:none}
+
+h2{
+  font-size:clamp(1.28rem,3vw,1.6rem);
+  font-weight:700;
+  letter-spacing:-.02em;
+  line-height:1.3;
+  margin-bottom:.35rem;
+  scroll-margin-top:1.5rem;
+}
+h2 .num{
+  display:inline-block;
+  color:var(--color-primary-light);
+  font-weight:800;
+  margin-right:.55rem;
+  font-variant-numeric:tabular-nums;
+}
+h3{
+  font-size:1rem;
+  font-weight:600;
+  margin:1.6rem 0 .55rem;
+  color:#e9e4ff;
+}
+
+.doc-section > p,
+.doc-section > ul,
+.doc-section > ol,
+.doc-section > .table-scroll,
+.doc-section > .callout{margin-top:.95rem}
+
+p{color:#d8d8de;max-width:74ch}
+p + p{margin-top:.85rem}
+
+ul,ol{padding-left:1.25rem;color:#d8d8de}
+li{margin-bottom:.45rem;max-width:72ch}
+li::marker{color:var(--color-primary-light)}
+strong{color:#fff;font-weight:600}
+
+.callout{
+  padding:1rem 1.15rem;
+  border-radius:var(--radius-lg);
+  border:1px solid rgba(124,58,237,.24);
+  border-left:3px solid var(--color-primary);
+  background:rgba(124,58,237,.06);
+  font-size:.9rem;
+  color:#cfcae4;
+}
+.callout p{color:inherit;font-size:inherit;margin:0}
+.callout p + p{margin-top:.6rem}
+.callout strong{color:#fff}
+
+.callout--note{
+  border-color:rgba(245,158,11,.24);
+  border-left-color:var(--color-warn);
+  background:rgba(245,158,11,.055);
+  color:#e4d8c2;
+}
+
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:.87rem;
+  min-width:520px;
+}
+caption{
+  caption-side:top;
+  text-align:left;
+  font-size:.76rem;
+  color:var(--color-text-muted);
+  padding-bottom:.5rem;
+}
+th,td{
+  text-align:left;
+  padding:.7rem .85rem;
+  border-bottom:1px solid var(--color-border);
+  vertical-align:top;
+  color:#d8d8de;
+}
+thead th{
+  color:#fff;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.07em;
+  text-transform:uppercase;
+  background:rgba(124,58,237,.09);
+  border-bottom:1px solid var(--color-border-strong);
+}
+tbody tr:hover td{background:rgba(255,255,255,.014)}
+td .yes{color:#c4b5fd;font-weight:600}
+td .no{color:var(--color-text-muted)}
+
+.chip{
+  display:inline-block;
+  padding:.15rem .6rem;
+  border-radius:var(--radius-full);
+  font-size:.72rem;font-weight:600;
+  background:rgba(124,58,237,.12);
+  border:1px solid rgba(124,58,237,.22);
+  color:#c4b5fd;
+  margin:.15rem .25rem .15rem 0;
+  white-space:nowrap;
+}
+
+/* ---------- Cierre ---------- */
+.closing{
+  margin:2.5rem 0 0;
+  padding:2rem 1.75rem;
+  text-align:center;
+  border-radius:var(--radius-2xl);
+  border:1px solid var(--color-border-strong);
+  background:linear-gradient(150deg,rgba(124,58,237,.1),rgba(255,255,255,.012));
+}
+.closing h2{
+  font-size:1.2rem;
+  margin-bottom:.6rem;
+}
+.closing p{
+  margin:0 auto .4rem;
+  max-width:60ch;
+  font-size:.93rem;
+  color:var(--color-text-secondary);
+}
+.closing .contact-lines{
+  margin:1.1rem 0 1.6rem;
+  font-size:.9rem;
+  display:flex;flex-wrap:wrap;gap:.4rem .9rem;
+  justify-content:center;
+}
+.closing .contact-lines a{
+  border-bottom:1px solid rgba(168,85,247,.35);
+}
+
+.btn-back{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  padding:.85rem 1.7rem;
+  border-radius:var(--radius-lg);
+  background:var(--gradient-primary);
+  color:#fff;font-weight:600;font-size:.95rem;
+  text-decoration:none;
+  box-shadow:0 0 22px rgba(124,58,237,.28);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn-back:hover{
+  color:#fff;text-decoration:none;
+  transform:translateY(-2px);
+  box-shadow:0 0 34px rgba(124,58,237,.42);
+}
+.btn-back svg{width:18px;height:18px;flex-shrink:0}
+
+/* ---------- Pie ---------- */
+.site-footer{
+  margin-top:3.5rem;
+  padding:2.25rem 0 2.5rem;
+  border-top:1px solid var(--color-border);
+  background:var(--color-bg-secondary);
+  font-size:.82rem;
+  color:var(--color-text-muted);
+  text-align:center;
+}
+.site-footer .fbrand{
+  color:#fff;font-weight:700;font-size:.95rem;letter-spacing:-.01em;
+}
+.site-footer p{margin:.4rem auto;max-width:60ch;color:var(--color-text-muted);font-size:.82rem}
+.site-footer a{color:var(--color-text-secondary)}
+.site-footer a:hover{color:var(--color-primary-light)}
+.footer-links{display:flex;flex-wrap:wrap;gap:.35rem .8rem;justify-content:center;margin-top:.6rem}
+.footer-copy{margin-top:1rem !important;font-size:.75rem !important}
+
+/* ---------- Responsive ---------- */
+@media (max-width:760px){
+  .toc ol{grid-template-columns:1fr}
+  .toc{padding:1.3rem 1.15rem}
+  .header-top{margin-bottom:1.75rem}
+  .brand img{height:32px}
+  .brand span{font-size:1rem}
+  .doc-section{padding:1.7rem 0}
+  .closing{padding:1.6rem 1.15rem}
+}
+
+@media (max-width:480px){
+  .wrap{padding:0 1rem}
+  body{font-size:.96rem}
+  .lead{font-size:.96rem}
+  .back-top span.lbl{display:none}
+  .table-scroll{margin:0 -1rem;padding:0 1rem}
+}
+
+/* ---------- Movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    transition:none !important;
+    animation:none !important;
+  }
+  .btn-back:hover{transform:none}
+}
+
+/* ---------- Impresión ---------- */
+@media print{
+  body{background:#fff;color:#111}
+  body::before{display:none}
+  .site-header,.doc-section{border-color:#ddd}
+  h1,h2,h3,strong{color:#111}
+  p,li,td,th{color:#222}
+  .tag,.chip,.toc{background:#f4f2ff}
+  .btn-back,.back-top{box-shadow:none;background:#7c3aed}
+  a{color:#5b21b6}
+  .doc-section{page-break-inside:avoid}
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+<!-- ================= ENCABEZADO ================= -->
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-top">
+      <a class="brand" href="./index.html" aria-label="Méndez Soluciones — Volver al inicio">
+        <img src="image/logomio.png" alt="Logo Méndez Soluciones" onerror="this.style.display='none'">
+        <span>Méndez Soluciones</span>
+      </a>
+      <a class="back-top" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span class="lbl">Volver al inicio</span>
+      </a>
+    </div>
+
+    <span class="tag">Documento informativo</span>
+    <h1>Política de <span class="grad">Privacidad</span></h1>
+    <p class="lead">
+      Esta página explica, en lenguaje claro, qué información personal trata Méndez Soluciones
+      a través de su sitio web, para qué se utiliza, quién puede recibirla y qué puedes hacer
+      al respecto. Fue redactada a partir de la revisión del código real del sitio —HTML, CSS
+      y JavaScript—, de modo que describa su funcionamiento efectivo y no prácticas supuestas.
+    </p>
+    <p class="meta"><strong>Última actualización:</strong> 20 de octubre de 2026</p>
+  </div>
+</header>
+
+<!-- ================= ÍNDICE ================= -->
+<nav class="toc" aria-label="Índice de la Política de Privacidad">
+  <h2>Contenido</h2>
+  <ol>
+    <li><a href="#responsable">Quién es el responsable</a></li>
+    <li><a href="#ambito">Ámbito de aplicación</a></li>
+    <li><a href="#datos">Qué información se recoge</a></li>
+    <li><a href="#finalidades">Para qué se utiliza</a></li>
+    <li><a href="#formulario">Formulario de contacto</a></li>
+    <li><a href="#formspree">Uso de Formspree</a></li>
+    <li><a href="#whatsapp">WhatsApp y código QR</a></li>
+    <li><a href="#calculadora">Calculadora y cotizaciones PDF</a></li>
+    <li><a href="#cookies">Cookies y recursos externos</a></li>
+    <li><a href="#destinatarios">Destinatarios y proveedores</a></li>
+    <li><a href="#conservacion">Conservación de la información</a></li>
+    <li><a href="#seguridad">Seguridad y tratamiento responsable</a></li>
+    <li><a href="#derechos">Derechos de los titulares</a></li>
+    <li><a href="#marco">Marco normativo aplicable</a></li>
+    <li><a href="#consultas">Consultas y ejercicio de derechos</a></li>
+    <li><a href="#cambios">Actualizaciones de esta política</a></li>
+  </ol>
+</nav>
+
+<main id="contenido">
+  <div class="wrap">
+
+    <!-- 1 -->
+    <section class="doc-section" id="responsable">
+      <h2><span class="num">01</span>Quién es el responsable</h2>
+      <p>
+        El responsable del tratamiento de los datos descritos en este documento es
+        <strong>Méndez Soluciones</strong>, emprendimiento chileno dedicado a la prestación de
+        servicios tecnológicos (desarrollo web, soporte técnico, mantenimiento de equipos, redes
+        y servicios relacionados), con atención presencial según zona y atención remota.
+      </p>
+      <p>Datos de contacto del responsable:</p>
+      <ul>
+        <li><strong>Nombre comercial:</strong> Méndez Soluciones</li>
+        <li><strong>Responsable / fundador:</strong> Gabriel Méndez</li>
+        <li><strong>Correo electrónico:</strong>
+          <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a></li>
+        <li><strong>WhatsApp:</strong>
+          <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">+56 9 5213 9257</a></li>
+      </ul>
+      <div class="callout">
+        <p>
+          Méndez Soluciones opera actualmente como emprendimiento (persona natural). En la versión
+          actual del sitio no se declaran una razón social formal, un RUT ni un domicilio comercial
+          distintos de los indicados arriba.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="doc-section" id="ambito">
+      <h2><span class="num">02</span>Ámbito de aplicación</h2>
+      <p>Esta política se aplica a:</p>
+      <ul>
+        <li>El sitio web de Méndez Soluciones y sus secciones (inicio, servicios, cómo trabajamos,
+          portafolio, calculadora, sobre nosotros, cobertura, preguntas frecuentes y contacto).</li>
+        <li>El formulario de contacto del sitio.</li>
+        <li>La calculadora de precios y la generación de cotizaciones en PDF desde el navegador.</li>
+        <li>Los enlaces de WhatsApp publicados en el sitio y el código QR incluido en las
+          cotizaciones generadas desde computador.</li>
+      </ul>
+      <p>
+        No se aplica a los sitios, aplicaciones o servicios de terceros a los que se accede desde
+        enlaces del sitio, como WhatsApp o las plataformas de contacto utilizadas para recibir el
+        formulario. En esos casos rigen sus propias condiciones y políticas.
+      </p>
+    </section>
+
+    <!-- 3 -->
+    <section class="doc-section" id="datos">
+      <h2><span class="num">03</span>Qué información se recoge</h2>
+      <p>
+        El sitio recoge información personal <strong>únicamente a través del formulario de la
+        sección «Contacto»</strong>. Los campos existentes en la versión actual son exactamente los
+        siguientes:
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <caption>Campos del formulario de contacto del sitio</caption>
+          <thead>
+            <tr>
+              <th scope="col">Campo</th>
+              <th scope="col">¿Obligatorio?</th>
+              <th scope="col">Para qué se pide</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Nombre completo</td>
+              <td><span class="yes">Sí *</span></td>
+              <td>Identificarte y dirigirnos a ti correctamente</td>
+            </tr>
+            <tr>
+              <td>Correo electrónico</td>
+              <td><span class="yes">Sí *</span></td>
+              <td>Responder tu consulta por escrito</td>
+            </tr>
+            <tr>
+              <td>Teléfono</td>
+              <td><span class="no">No</span></td>
+              <td>Contactarte por llamada o mensajería, si lo indicas</td>
+            </tr>
+            <tr>
+              <td>Servicio de interés</td>
+              <td><span class="no">No</span></td>
+              <td>Entender de antemano qué tipo de servicio necesitas</td>
+            </tr>
+            <tr>
+              <td>Mensaje</td>
+              <td><span class="yes">Sí *</span></td>
+              <td>Conocer los detalles de tu solicitud</td>
+            </tr>
+            <tr>
+              <td>Aceptación de la política de privacidad</td>
+              <td><span class="yes">Sí *</span></td>
+              <td>Dejar constancia de que autorizas el tratamiento</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>
+        Los campos obligatorios están marcados con un asterisco y se validan en el navegador antes
+        del envío (por ejemplo, formato válido de correo y largos mínimos de nombre y mensaje).
+      </p>
+
+      <div class="callout callout--note">
+        <p>
+          <strong>En su versión actual, el sitio no solicita</strong> RUT, dirección particular,
+          datos bancarios, contraseñas ni datos personales sensibles. Tampoco cuenta con registro
+          de usuarios ni con un área privada de cliente.
+        </p>
+      </div>
+    </section>
+
+    <!-- 4 -->
+    <section class="doc-section" id="finalidades">
+      <h2><span class="num">04</span>Para qué se utiliza la información</h2>
+      <p>Los datos enviados mediante el formulario se utilizan únicamente para:</p>
+      <ul>
+        <li>Responder la consulta recibida.</li>
+        <li>Contactarte por correo electrónico, teléfono o WhatsApp, según los datos que hayas entregado.</li>
+        <li>Comprender el servicio solicitado y, cuando corresponda, preparar o atender una
+          solicitud de cotización.</li>
+        <li>Gestionar las comunicaciones necesarias para llevar adelante ese servicio.</li>
+      </ul>
+      <p>
+        Estas finalidades se sostienen en el funcionamiento real del sitio. No se han implementado
+        otras, como publicidad automatizada, creación de perfiles de usuario, campañas de correo
+        masivo o venta de bases de datos.
+      </p>
+    </section>
+
+    <!-- 5 -->
+    <section class="doc-section" id="formulario">
+      <h2><span class="num">05</span>Formulario de contacto y gestión de solicitudes</h2>
+      <p>
+        Cuando completas el formulario y pulsas «Enviar mensaje», el sitio valida los datos
+        directamente en tu navegador. Si todo es correcto, el contenido del formulario se envía
+        mediante una petición <code>fetch()</code> al servicio externo Formspree, y desde ahí llega
+        a la casilla de correo de Méndez Soluciones.
+      </p>
+      <p>
+        El sitio no guarda el contenido del formulario en una base de datos propia: el envío se
+        realiza directamente al proveedor externo, que actúa como intermediario en la recepción.
+      </p>
+      <p>
+        Tras un envío correcto, el sitio muestra una confirmación visual y el formulario se limpia.
+        Si el envío falla por un problema de red o del proveedor, se muestra un mensaje de error y
+        el formulario no se borra, para que puedas intentarlo nuevamente.
+      </p>
+    </section>
+
+    <!-- 6 -->
+    <section class="doc-section" id="formspree">
+      <h2><span class="num">06</span>Uso de Formspree</h2>
+      <p>
+        El formulario del sitio utiliza <strong>Formspree</strong>, un servicio externo que recibe
+        el envío y lo reenvía a la casilla de correo de Méndez Soluciones. Su intervención se limita,
+        en la práctica, a esa función de recepción y reenvío de los datos que tú escribes en el
+        formulario.
+      </p>
+      <p>
+        En consecuencia, al enviar el formulario, los datos que ingresaste pasan a ser tratados
+        también por Formspree bajo sus propias condiciones. Según la información que Formspree
+        publica, la compañía se presenta como encargada del tratamiento y declara contar con
+        certificación SOC 2 Type 2. Estos datos se basan en lo publicado por el proveedor y pueden
+        cambiar con el tiempo.
+      </p>
+      <p>
+        Para conocer su detalle puedes revisar su política oficial:
+        <a href="https://formspree.io/legal/privacy-policy/" target="_blank" rel="noopener noreferrer">formspree.io/legal/privacy-policy</a>.
+      </p>
+      <div class="callout">
+        <p>
+          Esta política no afirma plazos de eliminación, ubicaciones geográficas de servidores ni
+          garantías de seguridad específicas de Formspree que no puedan confirmarse directamente
+          desde el sitio del proveedor.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="doc-section" id="whatsapp">
+      <h2><span class="num">07</span>Comunicaciones por WhatsApp y código QR</h2>
+      <p>Conviene distinguir dos situaciones distintas:</p>
+
+      <h3>A. Información enviada a través del formulario del sitio</h3>
+      <p>
+        Es la que se describe en las secciones 3 a 6: la escribes en el sitio y llega por medio del
+        formulario.
+      </p>
+
+      <h3>B. Información que decides compartir al escribir por WhatsApp</h3>
+      <p>
+        El sitio incluye enlaces que abren una conversación de WhatsApp con Méndez Soluciones.
+        Al pulsarlos, sales del sitio y pasas a utilizar un servicio externo operado por WhatsApp
+        (Meta). Lo que escribas, tu número y los archivos que adjuntes se tratarán según las
+        condiciones y la política de privacidad de WhatsApp.
+      </p>
+      <p>
+        Méndez Soluciones accede a esa conversación como cualquier otra persona usuaria de la
+        aplicación, y no lee conversaciones privadas ajenas ni obtiene información que WhatsApp no
+        le entregue a través de la propia conversación.
+      </p>
+      <p>
+        Política oficial de WhatsApp:
+        <a href="https://www.whatsapp.com/legal/privacy-policy" target="_blank" rel="noopener noreferrer">whatsapp.com/legal/privacy-policy</a>.
+      </p>
+
+      <h3>Sobre el código QR de las cotizaciones</h3>
+      <p>
+        Las cotizaciones generadas desde un computador pueden incluir un código QR que contiene un
+        enlace a WhatsApp. El QR, por sí mismo, <strong>no recopila información personal</strong>:
+        solo guarda una dirección web. Los datos comienzan a existir cuando escaneas el código y
+        decides escribir.
+      </p>
+    </section>
+
+    <!-- 8 -->
+    <section class="doc-section" id="calculadora">
+      <h2><span class="num">08</span>Calculadora y generación de cotizaciones en PDF</h2>
+      <p>
+        La calculadora de precios funciona íntegramente en tu navegador. Cuando seleccionas
+        servicios, cantidades y adicionales, el total se calcula de forma local, y
+        <strong>no se envían datos personales a ningún servidor</strong> durante ese proceso.
+      </p>
+      <p>
+        Del mismo modo, la cotización en PDF se genera en tu propio dispositivo. En computador, el
+        PDF se abre en una nueva pestaña para que puedas revisarlo; en dispositivos móviles, se
+        descarga directamente. El archivo resultante queda en tu equipo y no se almacena
+        automáticamente en un servidor.
+      </p>
+      <p>
+        El PDF puede incluir datos de contacto de Méndez Soluciones y un código QR de WhatsApp. Si
+        después decides confirmar la cotización por WhatsApp, aplica lo indicado en la sección 7.
+      </p>
+      <div class="callout">
+        <p>
+          En consecuencia, el hecho de usar la calculadora no genera por sí solo un tratamiento de
+          datos personales: se convierte en tal únicamente si luego envías el formulario o escribes
+          por WhatsApp.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="doc-section" id="cookies">
+      <h2><span class="num">09</span>Cookies, almacenamiento local y recursos externos</h2>
+      <p>
+        Revisado el código actual del sitio, <strong>no se detectaron mecanismos propios de
+        cookies</strong> ni uso de <code>localStorage</code> o <code>sessionStorage</code>.
+        Tampoco se detectaron scripts propios de analítica o seguimiento.
+      </p>
+      <p>
+        El sitio sí carga recursos desde servicios externos, que pueden registrar datos técnicos
+        como la dirección IP o el tipo de navegador, conforme a sus propias políticas:
+      </p>
+      <ul>
+        <li>Google Fonts, para las tipografías del sitio.</li>
+        <li>CDN de librerías, para el generador de códigos QR y el generador de PDF.</li>
+        <li>Otro CDN de librerías, para el efecto visual de confirmación al enviar el formulario.</li>
+        <li>Un archivo de sonido externo, que se reproduce al enviar el formulario correctamente.</li>
+      </ul>
+      <p>
+        Adicionalmente, el proveedor de alojamiento donde se publique el sitio puede generar
+        registros técnicos de acceso (por ejemplo, registros de servidor). Esos registros dependen
+        del hosting elegido y no pueden verificarse desde el código del sitio.
+      </p>
+      <div class="callout">
+        <p>
+          Por eso esta política no afirma de forma categórica que «el sitio no usa cookies». Lo que
+          puede afirmarse es que <strong>el código propio del sitio no implementa cookies,
+          almacenamiento local ni analítica</strong>, y que el navegador y los proveedores externos
+          podrían usar registros técnicos por su cuenta.
+        </p>
+      </div>
+      <p>
+        En la versión actual <strong>no existe un banner de consentimiento de cookies</strong>,
+        porque no hay cookies propias que gestionar.
+      </p>
+    </section>
+
+    <!-- 10 -->
+    <section class="doc-section" id="destinatarios">
+      <h2><span class="num">10</span>Destinatarios y proveedores</h2>
+      <p>Con la información enviada pueden intervenir, según el caso, los siguientes destinatarios:</p>
+      <ul>
+        <li>
+          <strong>Formspree</strong> — recibe y reenvía el contenido del formulario de contacto.
+          <span class="chip">Siempre, si usas el formulario</span>
+        </li>
+        <li>
+          <strong>WhatsApp (Meta)</strong> — trata la conversación cuando eliges escribir por ese canal.
+          <span class="chip">Solo si usas WhatsApp</span>
+        </li>
+        <li>
+          <strong>Proveedores de recursos web</strong> — los CDN que entregan tipografías, librerías
+          y el sonido de confirmación.
+          <span class="chip">Al cargar la página</span>
+        </li>
+        <li>
+          <strong>Proveedor de alojamiento</strong> — donde se publique el sitio, con sus registros técnicos.
+          <span class="chip">Depende del hosting</span>
+        </li>
+      </ul>
+      <p>
+        Fuera de lo anterior, no se ha implementado un sistema propio de venta, cesión o intercambio
+        de datos con terceros.
+      </p>
+      <div class="callout callout--note">
+        <p>
+          Esta política no promete que la información «nunca se comparte», porque, como se explica,
+          sí intervienen servicios externos en la recepción del formulario y en las comunicaciones.
+        </p>
+      </div>
+    </section>
+
+    <!-- 11 -->
+    <section class="doc-section" id="conservacion">
+      <h2><span class="num">11</span>Conservación de la información</h2>
+      <p>
+        El sitio no impone un plazo de eliminación automática verificable desde el código. Por eso
+        se describe como un criterio de gestión y no como un plazo exacto.
+      </p>
+      <p>
+        El compromiso de Méndez Soluciones es conservar la información enviada únicamente mientras
+        resulte necesaria para responder la consulta y gestionar el servicio solicitado, y
+        eliminarla o dejar de utilizarla cuando deje de ser necesaria para esas finalidades, o
+        antes, si lo solicitas.
+      </p>
+      <p>
+        Respecto de los envíos que pasan por Formspree, el tiempo que permanezcan allí depende de
+        las condiciones propias de ese proveedor.
+      </p>
+    </section>
+
+    <!-- 12 -->
+    <section class="doc-section" id="seguridad">
+      <h2><span class="num">12</span>Seguridad y tratamiento responsable</h2>
+      <p>
+        Méndez Soluciones se compromete a tratar la información de forma responsable y a limitar el
+        acceso a ella a quien gestiona las consultas. El envío del formulario se realiza mediante
+        una petición cifrada por HTTPS hacia el servicio de recepción.
+      </p>
+      <p>
+        Más allá de eso, y dado que el sitio no implementa una base de datos propia, esta política
+        <strong>no declara</strong> auditorías periódicas, cifrado de bases de datos, respaldos con
+        una frecuencia determinada, controles de acceso empresariales ni certificaciones de
+        seguridad propias, porque no existen antecedentes que lo demuestren en el código actual.
+      </p>
+      <div class="callout">
+        <p>
+          Ninguna medida de seguridad es absoluta. La política se redacta como un compromiso de
+          diligencia, no como una garantía total.
+        </p>
+      </div>
+    </section>
+
+    <!-- 13 -->
+    <section class="doc-section" id="derechos">
+      <h2><span class="num">13</span>Derechos de los titulares</h2>
+      <p>
+        Como titular de tus datos, puedes ejercer los derechos que la normativa chilena reconoce.
+        En la actualidad, la Ley 19.628 sobre protección de la vida privada reconoce, entre otros,
+        los derechos de <strong>información, rectificación, cancelación o bloqueo</strong> de los
+        datos personales.
+      </p>
+      <p>
+        La Ley 21.719, publicada el 13 de diciembre de 2024, modifica esa normativa y amplía de forma
+        relevante el catálogo de derechos y las obligaciones de quienes tratan datos. Su entrada en
+        vigor está prevista para el <strong>1 de diciembre de 2026</strong>, por lo que el marco
+        chileno se encuentra actualmente en transición.
+      </p>
+      <div class="callout callout--note">
+        <p>
+          Hasta que la reforma entre en vigor plenamente, se aplican los derechos de la normativa
+          vigente. Una vez que lo haga, se incorporarán los derechos adicionales que la nueva ley
+          reconozca, y esta política se actualizará en consecuencia.
+        </p>
+      </div>
+      <p>En términos prácticos, puedes solicitar:</p>
+      <ul>
+        <li>Que se te informe qué datos tuyos se mantienen y con qué finalidad.</li>
+        <li>Que se corrijan datos inexactos o incompletos.</li>
+        <li>Que se cancelen o bloqueen cuando corresponda.</li>
+        <li>Que se atienda tu oposición al tratamiento en los casos que la ley permita.</li>
+      </ul>
+      <p>
+        Las solicitudes se atienden por los canales indicados en la sección 15. Esta política no
+        fija plazos de respuesta propios, porque no existe un procedimiento formal implementado; se
+        responderá a la brevedad posible.
+      </p>
+    </section>
+
+    <!-- 14 -->
+    <section class="doc-section" id="marco">
+      <h2><span class="num">14</span>Marco normativo aplicable</h2>
+      <p>
+        Esta política se redacta teniendo en cuenta la normativa chilena sobre protección de datos,
+        consultable en fuentes oficiales de la Biblioteca del Congreso Nacional:
+      </p>
+      <ul>
+        <li>
+          <strong>Ley 19.628</strong>, sobre protección de la vida privada (norma vigente):
+          <a href="https://www.bcn.cl/leychile/navegar?idNorma=141599" target="_blank" rel="noopener noreferrer">bcn.cl/leychile — Ley 19.628</a>
+        </li>
+        <li>
+          <strong>Ley 21.719</strong>, que modifica la Ley 19.628 y crea la Agencia de Protección de
+          Datos Personales (entrada en vigor prevista para el 1 de diciembre de 2026):
+          <a href="https://www.bcn.cl/leychile/navegar?idNorma=1209272" target="_blank" rel="noopener noreferrer">bcn.cl/leychile — Ley 21.719</a>
+        </li>
+      </ul>
+      <p>
+        Este documento es una descripción de prácticas reales y no constituye, por sí solo, una
+        certificación de cumplimiento legal completo.
+      </p>
+    </section>
+
+    <!-- 15 -->
+    <section class="doc-section" id="consultas">
+      <h2><span class="num">15</span>Consultas y ejercicio de derechos</h2>
+      <p>
+        Para cualquier duda sobre esta política, o para ejercer tus derechos sobre tus datos,
+        puedes escribir a:
+      </p>
+      <ul>
+        <li>
+          <strong>Correo electrónico:</strong>
+          <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+          — puedes usar el asunto «Privacidad».
+        </li>
+        <li>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">+56 9 5213 9257</a>
+        </li>
+      </ul>
+      <p>Para agilizar la respuesta, conviene indicar en el mensaje:</p>
+      <ul>
+        <li>Tu nombre.</li>
+        <li>El correo o teléfono con el que nos contactaste.</li>
+        <li>Qué necesitas: información, corrección, cancelación o bloqueo, según corresponda.</li>
+      </ul>
+      <p>
+        No existe un correo exclusivo de privacidad distinto del indicado: se utiliza el mismo canal
+        de contacto publicado en el sitio.
+      </p>
+    </section>
+
+    <!-- 16 -->
+    <section class="doc-section" id="cambios">
+      <h2><span class="num">16</span>Actualizaciones de esta política</h2>
+      <p>
+        Esta política puede actualizarse cuando cambien las prácticas del sitio, los servicios
+        utilizados o la normativa aplicable. La fecha de última actualización que aparece al inicio
+        indica la versión vigente del documento.
+      </p>
+      <p>
+        En la versión actual no se ha implementado un sistema de aviso automático de cambios, por lo
+        que se recomienda revisar esta página si quieres conocer su estado más reciente.
+      </p>
+    </section>
+
+    <!-- ================= CIERRE ================= -->
+    <div class="closing">
+      <h2>¿Dudas sobre tus datos?</h2>
+      <p>
+        Si tienes cualquier consulta relacionada con esta política de privacidad, escríbenos
+        directamente. Con gusto te responderemos.
+      </p>
+      <div class="contact-lines">
+        <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+        <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+      <a class="btn-back" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Volver a Méndez Soluciones
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ================= PIE ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="fbrand">Méndez Soluciones</p>
+    <p>Política de Privacidad — documento informativo</p>
+    <div class="footer-links">
+      <a href="./index.html">Inicio</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Méndez Soluciones. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+/* JS mínimo: año del pie + resaltado del índice. No afecta el contenido. */
+(function () {
+  'use strict';
+
+  /* Año actual en el pie */
+  var y = document.getElementById('year');
+  if (y) { y.textContent = new Date().getFullYear(); }
+
+  /* Resaltar la sección visible en el índice */
+  var links = document.querySelectorAll('.toc a[href^="#"]');
+  if (!links.length || !('IntersectionObserver' in window)) { return; }
+
+  var map = {};
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    var sec = document.getElementById(id);
+    if (sec) { map[id] = a; }
+  });
+
+  var ids = Object.keys(map);
+  if (!ids.length) { return; }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var a = map[entry.target.id];
+      if (!a) { return; }
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('is-active'); });
+        a.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  ids.forEach(function (id) {
+    observer.observe(document.getElementById(id));
+  });
+})();
+</script>
+
+</body>
+</html>

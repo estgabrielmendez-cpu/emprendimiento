@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Términos de Uso | Méndez Soluciones</title>
+<meta name="description" content="Términos de Uso de Méndez Soluciones: reglas de utilización del sitio, funcionamiento de la calculadora, cotizaciones y condiciones generales de los servicios.">
+<meta name="robots" content="index, follow">
+<meta name="author" content="Méndez Soluciones">
+<link rel="icon" type="image/png" href="image/logomio.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   MÉNDEZ SOLUCIONES — TÉRMINOS DE USO
+   Identidad: negro + morado. Todo en un único archivo.
+   ============================================================ */
+
+:root{
+  --color-bg:#000000;
+  --color-bg-secondary:#0a0a0a;
+  --color-surface:#1a1a1a;
+  --color-primary:#7c3aed;
+  --color-primary-light:#a855f7;
+  --color-text:#ffffff;
+  --color-text-secondary:#a1a1aa;
+  --color-text-muted:#71717a;
+  --color-border:rgba(255,255,255,.07);
+  --color-border-strong:rgba(124,58,237,.28);
+  --color-warn:#f59e0b;
+  --gradient-primary:linear-gradient(135deg,#7c3aed 0%,#a855f7 100%);
+  --radius-md:.5rem;
+  --radius-lg:.75rem;
+  --radius-xl:1rem;
+  --radius-2xl:1.5rem;
+  --radius-full:9999px;
+  --maxw:920px;
+  --font:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:16px}
+
+body{
+  font-family:var(--font);
+  font-size:1rem;
+  line-height:1.75;
+  color:var(--color-text);
+  background:var(--color-bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x:hidden;
+}
+
+body::before{
+  content:'';
+  position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    radial-gradient(760px circle at 12% -8%, rgba(124,58,237,.16), transparent 62%),
+    radial-gradient(620px circle at 92% 6%, rgba(168,85,247,.085), transparent 58%),
+    radial-gradient(700px circle at 50% 108%, rgba(124,58,237,.07), transparent 62%);
+}
+
+img{max-width:100%;display:block}
+
+a{color:var(--color-primary-light);text-decoration:none;transition:color .18s ease}
+a:hover{color:#c4b5fd;text-decoration:underline}
+
+:focus-visible{outline:2px solid var(--color-primary-light);outline-offset:3px;border-radius:4px}
+
+.skip-link{
+  position:absolute;top:-120px;left:16px;z-index:999;
+  background:var(--color-primary);color:#fff;
+  padding:.65rem 1rem;border-radius:var(--radius-md);
+  font-weight:600;font-size:.9rem;text-decoration:none;
+}
+.skip-link:focus{top:16px;color:#fff;text-decoration:none}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 1.25rem}
+
+/* ---------- Encabezado ---------- */
+.site-header{position:relative;padding:2.25rem 0 2.75rem;border-bottom:1px solid var(--color-border)}
+.header-top{
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;margin-bottom:2.25rem;
+}
+.brand{display:inline-flex;align-items:center;gap:.7rem;color:#fff;text-decoration:none;font-weight:700}
+.brand:hover{color:#fff;text-decoration:none;opacity:.9}
+.brand img{height:38px;width:auto;object-fit:contain}
+.brand span{font-size:1.1rem;letter-spacing:-.02em}
+
+.back-top{
+  display:inline-flex;align-items:center;gap:.45rem;
+  font-size:.82rem;font-weight:500;
+  color:var(--color-text-secondary);text-decoration:none;
+  padding:.5rem .95rem;border-radius:var(--radius-full);
+  border:1px solid var(--color-border);
+  background:rgba(255,255,255,.02);
+  transition:border-color .2s ease,color .2s ease,background .2s ease;
+}
+.back-top:hover{
+  color:#fff;text-decoration:none;
+  border-color:var(--color-border-strong);
+  background:rgba(124,58,237,.07);
+}
+.back-top svg{width:15px;height:15px;flex-shrink:0}
+
+.tag{
+  display:inline-block;padding:.22rem .75rem;margin-bottom:1rem;
+  border-radius:var(--radius-full);
+  background:rgba(124,58,237,.1);
+  border:1px solid rgba(124,58,237,.22);
+  color:var(--color-primary-light);
+  font-size:.72rem;font-weight:600;
+  letter-spacing:.09em;text-transform:uppercase;
+}
+
+h1{
+  font-size:clamp(1.9rem,5vw,2.9rem);
+  font-weight:800;line-height:1.15;letter-spacing:-.03em;
+  margin-bottom:1rem;
+}
+h1 .grad{
+  background:var(--gradient-primary);
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.lead{font-size:1.02rem;color:var(--color-text-secondary);max-width:66ch}
+.meta{margin-top:1.5rem;font-size:.8rem;color:var(--color-text-muted)}
+.meta strong{color:var(--color-text-secondary);font-weight:600}
+
+/* ---------- Índice ---------- */
+.toc{
+  margin:2.75rem 0 0;padding:1.6rem 1.5rem;
+  background:linear-gradient(150deg,rgba(124,58,237,.07),rgba(255,255,255,.012));
+  border:1px solid var(--color-border-strong);
+  border-radius:var(--radius-2xl);
+}
+.toc h2{
+  font-size:.74rem;font-weight:700;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--color-primary-light);
+  margin-bottom:1rem;
+}
+.toc ol{
+  list-style:none;counter-reset:toc;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.35rem .9rem;
+}
+.toc li{counter-increment:toc;min-width:0}
+.toc a{
+  display:flex;gap:.55rem;font-size:.87rem;
+  color:var(--color-text-secondary);
+  padding:.32rem .4rem;border-radius:var(--radius-md);
+  text-decoration:none;
+  transition:color .16s ease,background .16s ease;
+}
+.toc a::before{
+  content:counter(toc,decimal-leading-zero);
+  color:var(--color-text-muted);font-size:.74rem;font-weight:700;
+  flex-shrink:0;padding-top:.15rem;
+}
+.toc a:hover{color:#fff;background:rgba(124,58,237,.09);text-decoration:none}
+.toc a.is-active{color:#fff;background:rgba(124,58,237,.14)}
+.toc a.is-active::before{color:var(--color-primary-light)}
+
+/* ---------- Contenido ---------- */
+main{padding:3.25rem 0 1rem}
+
+.doc-section{
+  padding:2rem 0;
+  border-bottom:1px solid var(--color-border);
+  scroll-margin-top:1.5rem;
+}
+.doc-section:last-of-type{border-bottom:none}
+
+h2{
+  font-size:clamp(1.28rem,3vw,1.6rem);
+  font-weight:700;letter-spacing:-.02em;line-height:1.3;
+  margin-bottom:.35rem;scroll-margin-top:1.5rem;
+}
+h2 .num{display:inline-block;color:var(--color-primary-light);font-weight:800;margin-right:.55rem;font-variant-numeric:tabular-nums}
+h3{font-size:1rem;font-weight:600;margin:1.6rem 0 .55rem;color:#e9e4ff}
+
+.doc-section > p,
+.doc-section > ul,
+.doc-section > ol,
+.doc-section > .table-scroll,
+.doc-section > .callout{margin-top:.95rem}
+
+p{color:#d8d8de;max-width:74ch}
+p + p{margin-top:.85rem}
+ul,ol{padding-left:1.25rem;color:#d8d8de}
+li{margin-bottom:.45rem;max-width:72ch}
+li::marker{color:var(--color-primary-light)}
+strong{color:#fff;font-weight:600}
+code{
+  font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+  font-size:.86em;color:#c4b5fd;
+  background:rgba(124,58,237,.1);
+  padding:.1rem .35rem;border-radius:.3rem;
+}
+
+.callout{
+  padding:1rem 1.15rem;border-radius:var(--radius-lg);
+  border:1px solid rgba(124,58,237,.24);
+  border-left:3px solid var(--color-primary);
+  background:rgba(124,58,237,.06);
+  font-size:.9rem;color:#cfcae4;
+}
+.callout p{color:inherit;font-size:inherit;margin:0}
+.callout p + p{margin-top:.6rem}
+.callout strong{color:#fff}
+
+.callout--note{
+  border-color:rgba(245,158,11,.24);
+  border-left-color:var(--color-warn);
+  background:rgba(245,158,11,.055);
+  color:#e4d8c2;
+}
+
+.table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.87rem;min-width:520px}
+caption{caption-side:top;text-align:left;font-size:.76rem;color:var(--color-text-muted);padding-bottom:.5rem}
+th,td{text-align:left;padding:.7rem .85rem;border-bottom:1px solid var(--color-border);vertical-align:top;color:#d8d8de}
+thead th{
+  color:#fff;font-size:.72rem;font-weight:700;
+  letter-spacing:.07em;text-transform:uppercase;
+  background:rgba(124,58,237,.09);
+  border-bottom:1px solid var(--color-border-strong);
+}
+tbody tr:hover td{background:rgba(255,255,255,.014)}
+
+.chip{
+  display:inline-block;padding:.15rem .6rem;border-radius:var(--radius-full);
+  font-size:.72rem;font-weight:600;
+  background:rgba(124,58,237,.12);
+  border:1px solid rgba(124,58,237,.22);
+  color:#c4b5fd;margin:.15rem .25rem .15rem 0;white-space:nowrap;
+}
+
+/* ---------- Cierre ---------- */
+.closing{
+  margin:2.5rem 0 0;padding:2rem 1.75rem;text-align:center;
+  border-radius:var(--radius-2xl);
+  border:1px solid var(--color-border-strong);
+  background:linear-gradient(150deg,rgba(124,58,237,.1),rgba(255,255,255,.012));
+}
+.closing h2{font-size:1.2rem;margin-bottom:.6rem}
+.closing p{margin:0 auto .4rem;max-width:60ch;font-size:.93rem;color:var(--color-text-secondary)}
+.closing .contact-lines{
+  margin:1.1rem 0 1.6rem;font-size:.9rem;
+  display:flex;flex-wrap:wrap;gap:.4rem .9rem;justify-content:center;
+}
+.closing .contact-lines a{border-bottom:1px solid rgba(168,85,247,.35)}
+
+.btn-back{
+  display:inline-flex;align-items:center;justify-content:center;gap:.55rem;
+  padding:.85rem 1.7rem;border-radius:var(--radius-lg);
+  background:var(--gradient-primary);color:#fff;
+  font-weight:600;font-size:.95rem;text-decoration:none;
+  box-shadow:0 0 22px rgba(124,58,237,.28);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.btn-back:hover{
+  color:#fff;text-decoration:none;
+  transform:translateY(-2px);
+  box-shadow:0 0 34px rgba(124,58,237,.42);
+}
+.btn-back svg{width:18px;height:18px;flex-shrink:0}
+
+/* ---------- Pie ---------- */
+.site-footer{
+  margin-top:3.5rem;padding:2.25rem 0 2.5rem;
+  border-top:1px solid var(--color-border);
+  background:var(--color-bg-secondary);
+  font-size:.82rem;color:var(--color-text-muted);text-align:center;
+}
+.site-footer .fbrand{color:#fff;font-weight:700;font-size:.95rem;letter-spacing:-.01em}
+.site-footer p{margin:.4rem auto;max-width:60ch;color:var(--color-text-muted);font-size:.82rem}
+.site-footer a{color:var(--color-text-secondary)}
+.site-footer a:hover{color:var(--color-primary-light)}
+.footer-links{display:flex;flex-wrap:wrap;gap:.35rem .8rem;justify-content:center;margin-top:.6rem}
+.footer-copy{margin-top:1rem !important;font-size:.75rem !important}
+
+/* ---------- Responsive ---------- */
+@media (max-width:760px){
+  .toc ol{grid-template-columns:1fr}
+  .toc{padding:1.3rem 1.15rem}
+  .header-top{margin-bottom:1.75rem}
+  .brand img{height:32px}
+  .brand span{font-size:1rem}
+  .doc-section{padding:1.7rem 0}
+  .closing{padding:1.6rem 1.15rem}
+}
+@media (max-width:480px){
+  .wrap{padding:0 1rem}
+  body{font-size:.96rem}
+  .lead{font-size:.96rem}
+  .back-top span.lbl{display:none}
+  .table-scroll{margin:0 -1rem;padding:0 1rem}
+}
+
+/* ---------- Movimiento reducido ---------- */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition:none !important;animation:none !important}
+  .btn-back:hover{transform:none}
+}
+
+/* ---------- Impresión ---------- */
+@media print{
+  body{background:#fff;color:#111}
+  body::before{display:none}
+  .site-header,.doc-section{border-color:#ddd}
+  h1,h2,h3,strong{color:#111}
+  p,li,td,th{color:#222}
+  .tag,.chip,.toc{background:#f4f2ff}
+  .btn-back,.back-top{box-shadow:none;background:#7c3aed}
+  a{color:#5b21b6}
+  .doc-section{page-break-inside:avoid}
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+<!-- ================= ENCABEZADO ================= -->
+<header class="site-header">
+  <div class="wrap">
+    <div class="header-top">
+      <a class="brand" href="./index.html" aria-label="Méndez Soluciones — Volver al inicio">
+        <img src="image/logomio.png" alt="Logo Méndez Soluciones" onerror="this.style.display='none'">
+        <span>Méndez Soluciones</span>
+      </a>
+      <a class="back-top" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        <span class="lbl">Volver al inicio</span>
+      </a>
+    </div>
+
+    <span class="tag">Documento informativo</span>
+    <h1>Términos de <span class="grad">Uso</span></h1>
+    <p class="lead">
+      Estas son las reglas generales para usar el sitio web de Méndez Soluciones y sus
+      herramientas: qué se puede hacer con ellas, cómo funciona la calculadora de precios,
+      qué significa una cotización y cómo se relaciona con una solicitud de servicio.
+      Está redactado a partir del funcionamiento real del sitio, sin condiciones inventadas.
+    </p>
+    <p class="meta"><strong>Última actualización:</strong> 20 de octubre de 2026</p>
+  </div>
+</header>
+
+<!-- ================= ÍNDICE ================= -->
+<nav class="toc" aria-label="Índice de los Términos de Uso">
+  <h2>Contenido</h2>
+  <ol>
+    <li><a href="#que-son">Qué son estos Términos de Uso</a></li>
+    <li><a href="#responsable">Quién es el responsable</a></li>
+    <li><a href="#ambito">A qué se aplican</a></li>
+    <li><a href="#uso">Uso del sitio</a></li>
+    <li><a href="#servicios">Servicios que ofrece Méndez Soluciones</a></li>
+    <li><a href="#calculadora">La calculadora de precios</a></li>
+    <li><a href="#cotizaciones">Qué significa una cotización</a></li>
+    <li><a href="#condiciones">Condiciones comerciales de las cotizaciones</a></li>
+    <li><a href="#precios">Precios, estimaciones y errores</a></li>
+    <li><a href="#solicitud">Cómo se solicita y confirma un servicio</a></li>
+    <li><a href="#alcance">Alcance, plazos y entrega</a></li>
+    <li><a href="#propiedad">Propiedad intelectual y contenidos</a></li>
+    <li><a href="#terceros">Enlaces y plataformas de terceros</a></li>
+    <li><a href="#disponibilidad">Disponibilidad y funcionamiento técnico</a></li>
+    <li><a href="#responsabilidad">Limitaciones de responsabilidad</a></li>
+    <li><a href="#datos">Protección de datos personales</a></li>
+    <li><a href="#cambios">Modificaciones de estos términos</a></li>
+    <li><a href="#legislacion">Legislación aplicable</a></li>
+    <li><a href="#contacto">Consultas y contacto</a></li>
+  </ol>
+</nav>
+
+<main id="contenido">
+  <div class="wrap">
+
+    <!-- 1 -->
+    <section class="doc-section" id="que-son">
+      <h2><span class="num">01</span>Qué son estos Términos de Uso</h2>
+      <p>
+        Estos Términos de Uso describen, en lenguaje simple, las reglas generales para utilizar
+        el sitio web de Méndez Soluciones y sus herramientas, y explican cómo funcionan las
+        consultas, la calculadora de precios y las solicitudes de servicio realizadas por los
+        canales disponibles.
+      </p>
+      <p>
+        Su finalidad es que sepas de antemano qué puedes esperar del sitio y qué se espera de
+        quien lo usa. No reemplazan a un contrato ni a las condiciones particulares que se
+        acuerden para un trabajo concreto: solo fijan las reglas generales de uso.
+      </p>
+      <div class="callout">
+        <p>
+          Navegar por el sitio <strong>no equivale a contratar un servicio</strong>. La
+          contratación ocurre cuando, después de una consulta y una cotización, se acuerda un
+          trabajo y sus condiciones.
+        </p>
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section class="doc-section" id="responsable">
+      <h2><span class="num">02</span>Quién es el responsable</h2>
+      <p>
+        El sitio y los servicios aquí descritos son operados por <strong>Méndez Soluciones</strong>,
+        emprendimiento chileno de servicios tecnológicos con atención presencial según zona y
+        atención remota.
+      </p>
+      <ul>
+        <li><strong>Nombre comercial:</strong> Méndez Soluciones</li>
+        <li><strong>Responsable / fundador:</strong> Gabriel Méndez</li>
+        <li><strong>Correo electrónico:</strong>
+          <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a></li>
+        <li><strong>WhatsApp:</strong>
+          <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">+56 9 5213 9257</a></li>
+      </ul>
+      <div class="callout callout--note">
+        <p>
+          Méndez Soluciones se identifica con su <strong>nombre comercial</strong>. En la versión
+          actual del sitio no se declaran una razón social formal, un RUT ni un domicilio
+          comercial distintos de los indicados. Si en el futuro se constituye una sociedad, estos
+          términos deberán actualizarse.
+        </p>
+      </div>
+    </section>
+
+    <!-- 3 -->
+    <section class="doc-section" id="ambito">
+      <h2><span class="num">03</span>A qué se aplican</h2>
+      <p>Estos términos cubren:</p>
+      <ul>
+        <li>La navegación por el sitio de Méndez Soluciones y sus secciones.</li>
+        <li>El uso de la calculadora de precios y la generación de cotizaciones en PDF.</li>
+        <li>El envío de consultas mediante el formulario de contacto.</li>
+        <li>El uso de los enlaces de WhatsApp publicados en el sitio.</li>
+      </ul>
+      <p>
+        No cubren el funcionamiento interno de plataformas externas (como WhatsApp), que tienen
+        sus propias condiciones, ni el contenido de sitios de terceros a los que se llegue desde
+        enlaces.
+      </p>
+      <p>
+        El tratamiento de datos personales se explica por separado, en la
+        <a href="politica-privacidad.html">Política de Privacidad</a>, que forma parte de este sitio.
+      </p>
+    </section>
+
+    <!-- 4 -->
+    <section class="doc-section" id="uso">
+      <h2><span class="num">04</span>Uso del sitio</h2>
+      <p>El sitio está pensado para uso normal de un visitante: informarse, cotizar y contactar. Se espera que:</p>
+      <ul>
+        <li>Lo uses para fines lícitos y coherentes con su propósito.</li>
+        <li>No intentes alterar o interrumpir su funcionamiento de forma indebida.</li>
+        <li>No manipules el formulario o la calculadora de manera que produzcan resultados engañosos.</li>
+        <li>Respete los derechos de terceros al reutilizar contenidos del sitio.</li>
+        <li>Entregues información razonablemente correcta al enviar una consulta.</li>
+      </ul>
+      <p>
+        El sitio <strong>no tiene cuentas de usuario ni registro obligatorio</strong>: no hay inicio
+        de sesión, contraseñas ni perfiles. Por lo mismo, tampoco existen sistemas automáticos de
+        suspensión o sanción: las reglas anteriores son criterios de convivencia, no un
+        procedimiento sancionatorio formal.
+      </p>
+    </section>
+
+    <!-- 5 -->
+    <section class="doc-section" id="servicios">
+      <h2><span class="num">05</span>Servicios que ofrece Méndez Soluciones</h2>
+      <p>
+        Méndez Soluciones presta servicios tecnológicos. Según el contenido actual del sitio y de
+        su calculadora, las áreas disponibles son:
+      </p>
+      <ul>
+        <li>Desarrollo de páginas web.</li>
+        <li>Landing pages.</li>
+        <li>Limpieza y mantenimiento de computadores.</li>
+        <li>Instalación de sistemas operativos.</li>
+        <li>Instalación de aplicaciones.</li>
+        <li>Redes y conectividad.</li>
+        <li>Soporte técnico general.</li>
+      </ul>
+      <p>
+        El <strong>alcance concreto</strong> de cada trabajo no queda definido por el solo hecho de
+        aparecer en la lista: se determina según lo que solicites y lo que se acuerde para ese
+        caso. Un mismo servicio puede implicar más o menos trabajo según el equipo, el entorno o
+        los requerimientos específicos.
+      </p>
+      <div class="callout callout--note">
+        <p>
+          El sitio no promete plazos estándar, niveles de disponibilidad ni garantías universales
+          para todos los servicios. Lo que aplica a un trabajo puntual se acuerda para ese trabajo.
+        </p>
+      </div>
+    </section>
+
+    <!-- 6 -->
+    <section class="doc-section" id="calculadora">
+      <h2><span class="num">06</span>La calculadora de precios</h2>
+      <p>
+        La calculadora es una herramienta para <strong>estimar</strong> el valor de un servicio.
+        Funciona íntegramente en tu navegador: seleccionas categorías, cantidades y extras, y el
+        sitio calcula un total de referencia.
+      </p>
+      <p>El resultado depende de lo que tú elijas, entre otras cosas de:</p>
+      <ul>
+        <li>Las categorías de servicio que marques.</li>
+        <li>Las cantidades y los límites que la propia calculadora aplica.</li>
+        <li>Los servicios adicionales y extras que agregues.</li>
+        <li>Los metros adicionales de cable, cuando corresponda.</li>
+      </ul>
+      <p>
+        Como el cálculo se hace en tu dispositivo, la estimación aparece al instante y sin
+        enviar datos a un servidor. Si después generas la cotización en PDF, ese archivo también
+        se produce en tu equipo.
+      </p>
+      <div class="callout">
+        <p>
+          El resumen de la calculadora advierte que los valores son <strong>referenciales</strong>,
+          que pueden variar según los requerimientos específicos y que conviene
+          <strong>confirmar la cotización por WhatsApp</strong>. Esa advertencia es parte del
+          funcionamiento real de la herramienta.
+        </p>
+      </div>
+    </section>
+
+    <!-- 7 -->
+    <section class="doc-section" id="cotizaciones">
+      <h2><span class="num">07</span>Qué significa una cotización</h2>
+      <p>
+        Una cotización generada desde el sitio es una <strong>propuesta estimativa</strong>. Sirve
+        para que tengas una idea clara del valor y del tiempo involucrado, y para conversar sobre
+        el proyecto con una base concreta.
+      </p>
+      <p>Por eso conviene entenderla así:</p>
+      <ul>
+        <li>Refleja las opciones que <em>tú</em> seleccionaste, no necesariamente todo lo que el
+          proyecto podría requerir.</li>
+        <li>Es un punto de partida para revisar, no un documento cerrado.</li>
+        <li>Puede ajustarse si, al conocer mejor tus necesidades, el alcance cambia.</li>
+      </ul>
+      <p>
+        Descargar o abrir el PDF <strong>no convierte automáticamente la cotización en un
+        contrato definitivo</strong>, pero tampoco carece de efecto: es la propuesta sobre la que se
+        conversa y, si se confirma, pasa a ser la base del trabajo acordado.
+      </p>
+    </section>
+
+    <!-- 8 -->
+    <section class="doc-section" id="condiciones">
+      <h2><span class="num">08</span>Condiciones comerciales de las cotizaciones</h2>
+      <p>
+        Las cotizaciones que genera el sitio incluyen actualmente, de forma expresa, un bloque de
+        condiciones comerciales y de observaciones. Estas son las que hoy aparecen en el documento:
+      </p>
+
+      <div class="table-scroll">
+        <table>
+          <caption>Bloque «Condiciones comerciales» del PDF de cotización</caption>
+          <thead>
+            <tr>
+              <th scope="col">Condición</th>
+              <th scope="col">Qué dice actualmente</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Vigencia</td>
+              <td>7 días corridos desde la fecha de emisión.</td>
+            </tr>
+            <tr>
+              <td>Inicio del trabajo</td>
+              <td>El trabajo comienza una vez confirmado el pago inicial del 50 %.</td>
+            </tr>
+            <tr>
+              <td>Tiempos</td>
+              <td>Son estimados y pueden variar según complejidad.</td>
+            </tr>
+            <tr>
+              <td>Cambios de alcance</td>
+              <td>Cambios fuera del alcance inicial podrán generar costos adicionales.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Observaciones que también aparecen en el PDF</h3>
+      <ul>
+        <li>El precio incluye mano de obra y desarrollo según el alcance indicado.</li>
+        <li>Los precios están sujetos a cambios si se requieren funcionalidades adicionales.</li>
+        <li>Materiales y licencias de software corren por cuenta del cliente (si aplica).</li>
+      </ul>
+
+      <h3>Forma de pago indicada</h3>
+      <p>
+        El documento señala como medios de pago la transferencia bancaria, el efectivo y
+        Mercado Pago. El sitio, por sí mismo, <strong>no cobra ni procesa pagos en línea</strong>:
+        solo los indica como referencia.
+      </p>
+
+      <div class="callout">
+        <p>
+          Estas condiciones son las que el PDF lleva hoy y forman parte de la propuesta concreta.
+          Si alguna se modifica en el código, el texto de estos términos debería actualizarse para
+          no contradecirla. Cuando se acuerden condiciones particulares distintas para un proyecto,
+          esas condiciones particulares son las que rigen ese trabajo, sin perjuicio de la
+          normativa aplicable.
+        </p>
+      </div>
+    </section>
+
+    <!-- 9 -->
+    <section class="doc-section" id="precios">
+      <h2><span class="num">09</span>Precios, estimaciones y errores</h2>
+      <p>
+        Los valores de la calculadora son estimaciones basadas en las opciones seleccionadas. Por
+        su propia naturaleza, no pueden anticipar cada detalle de un proyecto.
+      </p>
+      <p>
+        Si detectas un error en un cálculo o en la cotización generada —por ejemplo, un total que
+        no coincide con lo que seleccionaste—, puedes comunicarlo por los canales de contacto
+        indicados en estos términos. El sitio no implementa un procedimiento formal de reclamación
+        aparte: se resuelve por el mismo canal de contacto.
+      </p>
+      <div class="callout callout--note">
+        <p>
+          Sobre los precios, conviene una lectura equilibrada: la estimación puede ajustarse
+          cuando cambian los requerimientos, pero eso no significa que un valor pueda cambiarse
+          de forma arbitraria una vez acordado un trabajo concreto. En la práctica, el ajuste se
+          explica y se conversa.
+        </p>
+      </div>
+    </section>
+
+    <!-- 10 -->
+    <section class="doc-section" id="solicitud">
+      <h2><span class="num">10</span>Cómo se solicita y confirma un servicio</h2>
+      <p>El flujo real del sitio tiene etapas distintas, que conviene no confundir:</p>
+      <ol>
+        <li><strong>Navegar</strong> e informarte sobre los servicios.</li>
+        <li><strong>Estimar</strong> un valor con la calculadora.</li>
+        <li><strong>Generar y revisar</strong> la cotización en PDF, si lo deseas.</li>
+        <li><strong>Contactar</strong>, ya sea por el formulario del sitio o por WhatsApp.</li>
+        <li><strong>Conversar</strong> el alcance real y confirmar el trabajo.</li>
+      </ol>
+      <p>
+        El sitio <strong>no tiene carrito de compras, ni checkout, ni compra automática</strong>. La
+        confirmación se produce en la conversación: se revisa la cotización, se ajusta si hace
+        falta y se acuerdan las condiciones.
+      </p>
+      <p>
+        El formulario del sitio permite enviar tu nombre, correo, teléfono (opcional), el servicio
+        de interés (opcional) y un mensaje. Los enlaces de WhatsApp abren una conversación directa.
+        El detalle del tratamiento de esos datos está en la
+        <a href="politica-privacidad.html">Política de Privacidad</a>.
+      </p>
+    </section>
+
+    <!-- 11 -->
+    <section class="doc-section" id="alcance">
+      <h2><span class="num">11</span>Alcance, plazos y entrega</h2>
+      <p>
+        Los servicios tecnológicos dependen de factores concretos: el estado del equipo, el entorno
+        del cliente, la disponibilidad de materiales o licencias, y los requerimientos específicos.
+        Por eso, el alcance y los plazos se definen según cada trabajo.
+      </p>
+      <p>
+        El PDF de cotización muestra un <strong>tiempo estimado de entrega</strong> y advierte que
+        los tiempos pueden variar según la complejidad del proyecto. Es importante distinguir:
+      </p>
+      <ul>
+        <li><strong>Estimación:</strong> el tiempo que aparece en la cotización, calculado con la
+          información disponible al momento.</li>
+        <li><strong>Compromiso:</strong> el plazo que se confirma al acordar el trabajo, una vez
+          conocidos los detalles.</li>
+      </ul>
+      <p>
+        El sitio no promete plazos garantizados ni disponibilidad permanente. Tampoco declara
+        eximirse automáticamente de toda responsabilidad por retrasos: lo razonable es que el
+        retraso se explique y se gestione.
+      </p>
+    </section>
+
+    <!-- 12 -->
+    <section class="doc-section" id="propiedad">
+      <h2><span class="num">12</span>Propiedad intelectual y contenidos</h2>
+      <p>Dentro del sitio conviven distintos tipos de contenido, y conviene distinguirlos:</p>
+      <ul>
+        <li><strong>Marca y logotipo:</strong> el nombre Méndez Soluciones y su logotipo identifican
+          al emprendimiento.</li>
+        <li><strong>Diseño y textos del sitio:</strong> el diseño, la redacción y la estructura
+          fueron elaborados para este proyecto.</li>
+        <li><strong>Herramientas de terceros:</strong> el sitio se apoya en librerías y recursos
+          externos (por ejemplo, para generar el PDF o los códigos QR). Los derechos sobre esos
+          componentes corresponden a sus propios autores, no a Méndez Soluciones.</li>
+        <li><strong>Proyectos del portafolio:</strong> los trabajos mostrados como ejemplos pueden
+          incluir contenidos o marcas de clientes.</li>
+        <li><strong>Entregables de un servicio:</strong> lo que se entrega en un trabajo concreto
+          se rige por lo acordado para ese trabajo.</li>
+      </ul>
+      <div class="callout">
+        <p>
+          Estos términos no establecen por sí solos una regla de cesión de derechos sobre el
+          código desarrollado para un cliente. Esa materia se define en el acuerdo de cada
+          proyecto y por la normativa aplicable.
+        </p>
+      </div>
+    </section>
+
+    <!-- 13 -->
+    <section class="doc-section" id="terceros">
+      <h2><span class="num">13</span>Enlaces y plataformas de terceros</h2>
+      <p>
+        El sitio incluye enlaces a canales externos, principalmente WhatsApp Business, y carga
+        recursos desde servicios de terceros (tipografías y librerías). Cuando sigues uno de esos
+        enlaces, sales del sitio y pasas a un entorno que no controla Méndez Soluciones.
+      </p>
+      <p>
+        En consecuencia, tu uso de esas plataformas también puede quedar sujeto a sus propias
+        condiciones y políticas. Méndez Soluciones no responde por el funcionamiento interno de
+        dichas plataformas, pero tampoco se desentiende de todo: sigue siendo responsable de la
+        atención que presta a través de ellas.
+      </p>
+      <p>
+        El código QR que puede incluirse en las cotizaciones generadas desde computador contiene
+        un enlace a WhatsApp. Por sí solo no recopila información: solo apunta a una dirección.
+      </p>
+    </section>
+
+    <!-- 14 -->
+    <section class="doc-section" id="disponibilidad">
+      <h2><span class="num">14</span>Disponibilidad y funcionamiento técnico</h2>
+      <p>
+        Un sitio web depende de factores técnicos que pueden provocar interrupciones temporales:
+        el proveedor de alojamiento, la conexión del usuario, el navegador utilizado o el estado
+        de los servicios externos que entregan recursos.
+      </p>
+      <p>
+        Por eso, estos términos describen el funcionamiento de forma prudente y sin prometer
+        porcentajes de disponibilidad. Tampoco se afirma que exista monitorización permanente,
+        infraestructura redundante o planes de continuidad específicos, porque la versión actual
+        del proyecto no permite verificarlos.
+      </p>
+      <div class="callout callout--note">
+        <p>
+          La calculadora y la generación de PDF funcionan en el navegador, por lo que, si el sitio
+          ya cargó, esas herramientas no dependen de una conexión permanente a un servidor propio.
+        </p>
+      </div>
+    </section>
+
+    <!-- 15 -->
+    <section class="doc-section" id="responsabilidad">
+      <h2><span class="num">15</span>Limitaciones de responsabilidad</h2>
+      <p>
+        Estos términos buscan ser razonables y no eliminar derechos. En términos simples:
+      </p>
+      <ul>
+        <li>Méndez Soluciones responde por el servicio que efectivamente presta, según lo acordado.</li>
+        <li>Las estimaciones de la calculadora son referenciales y no constituyen por sí solas un
+          compromiso definitivo de precio o plazo.</li>
+        <li>El uso de plataformas de terceros queda también sujeto a las condiciones de esas
+          plataformas.</li>
+        <li>El contenido informativo del sitio no reemplaza una evaluación técnica del caso concreto.</li>
+      </ul>
+      <p>
+        Ninguna de estas ideas pretende ser una exención total de responsabilidad. Lo que se
+        describe son criterios generales, no una renuncia anticipada a los derechos que la ley
+        reconoce al cliente.
+      </p>
+      <div class="callout">
+        <p>
+          Si más adelante se quisiera incorporar una cláusula de limitación más específica, lo
+          recomendable es revisarla con asesoría jurídica, porque su validez depende de cómo esté
+          redactada y del tipo de servicio.
+        </p>
+      </div>
+    </section>
+
+    <!-- 16 -->
+    <section class="doc-section" id="datos">
+      <h2><span class="num">16</span>Protección de datos personales</h2>
+      <p>
+        Estos términos tratan sobre el uso del sitio; el tratamiento de datos personales se
+        explica por separado y con mayor detalle en la
+        <a href="politica-privacidad.html">Política de Privacidad</a>.
+      </p>
+      <p>
+        En resumen: el sitio recoge datos personales solo a través del formulario de contacto
+        (nombre, correo, teléfono opcional, servicio de interés opcional y mensaje), y los usa para
+        responder tu consulta. La calculadora y el PDF funcionan en tu navegador.
+      </p>
+    </section>
+
+    <!-- 17 -->
+    <section class="doc-section" id="cambios">
+      <h2><span class="num">17</span>Modificaciones de estos términos</h2>
+      <p>
+        Estos términos pueden necesitar actualizaciones si cambia el sitio, sus herramientas o la
+        normativa aplicable. La fecha de última actualización indica la versión vigente del
+        documento.
+      </p>
+      <p>
+        Conviene distinguir dos planos:
+      </p>
+      <ul>
+        <li><strong>Reglas generales de uso:</strong> pueden actualizarse con el tiempo; la versión
+          publicada es la que rige desde su fecha.</li>
+        <li><strong>Condiciones particulares de un proyecto:</strong> lo acordado para un trabajo
+          concreto no queda automáticamente alterado por una actualización posterior de estos
+          términos generales.</li>
+      </ul>
+      <p>
+        El sitio no implementa un mecanismo automático de aviso ni una aceptación digital de
+        cambios, por lo que se recomienda revisar la fecha de actualización si quieres conocer su
+        estado más reciente.
+      </p>
+    </section>
+
+    <!-- 18 -->
+    <section class="doc-section" id="legislacion">
+      <h2><span class="num">18</span>Legislación aplicable</h2>
+      <p>
+        El sitio está orientado principalmente a Chile. Como referencia normativa, y sin que esto
+        constituya por sí solo una certificación de cumplimiento, se consideran las siguientes
+        fuentes oficiales:
+      </p>
+      <ul>
+        <li>
+          <strong>Ley 19.496</strong>, sobre protección de los derechos de los consumidores:
+          <a href="https://www.bcn.cl/leychile/navegar?idNorma=61438" target="_blank" rel="noopener noreferrer">bcn.cl/leychile — Ley 19.496</a>
+        </li>
+        <li>
+          <strong>Decreto 6 de 2021</strong>, que aprueba el Reglamento de Comercio Electrónico:
+          <a href="https://www.bcn.cl/leychile/navegar?idNorma=1165504" target="_blank" rel="noopener noreferrer">bcn.cl/leychile — Decreto 6 de 2021</a>
+        </li>
+        <li>
+          <strong>Ley 19.628</strong> y <strong>Ley 21.719</strong> (protección de datos personales),
+          detalladas en la <a href="politica-privacidad.html">Política de Privacidad</a>.
+        </li>
+        <li>
+          Servicio Nacional del Consumidor:
+          <a href="https://www.sernac.cl" target="_blank" rel="noopener noreferrer">sernac.cl</a>
+        </li>
+      </ul>
+      <div class="callout callout--note">
+        <p>
+          Como el sitio no vende productos ni procesa pagos en línea, sino que presenta servicios
+          y permite solicitar cotizaciones, las reglas propias de una plataforma de comercio
+          electrónico no se aplican todas de manera automática. La Ley 19.496 sí resulta relevante,
+          porque se ofrecen servicios a consumidores.
+        </p>
+      </div>
+    </section>
+
+    <!-- 19 -->
+    <section class="doc-section" id="contacto">
+      <h2><span class="num">19</span>Consultas y contacto</h2>
+      <p>Si tienes dudas sobre estos términos, puedes escribirnos por:</p>
+      <ul>
+        <li>
+          <strong>Correo electrónico:</strong>
+          <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+          — puedes usar el asunto «Términos de Uso».
+        </li>
+        <li>
+          <strong>WhatsApp:</strong>
+          <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">+56 9 5213 9257</a>
+        </li>
+      </ul>
+      <p>
+        Se utilizan los mismos canales de contacto publicados en el sitio. No existe un canal
+        exclusivo distinto para estos términos.
+      </p>
+    </section>
+
+    <!-- ================= CIERRE ================= -->
+    <div class="closing">
+      <h2>¿Alguna duda antes de cotizar?</h2>
+      <p>
+        Si algo de estas reglas no te queda claro, escríbenos antes de solicitar un servicio.
+        Preferimos que todo quede transparente desde el inicio.
+      </p>
+      <div class="contact-lines">
+        <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+        <a href="https://wa.me/56952139257" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </div>
+      <a class="btn-back" href="./index.html">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <path d="M19 12H5M12 19l-7-7 7-7"/>
+        </svg>
+        Volver a Méndez Soluciones
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<!-- ================= PIE ================= -->
+<footer class="site-footer">
+  <div class="wrap">
+    <p class="fbrand">Méndez Soluciones</p>
+    <p>Términos de Uso — documento informativo</p>
+    <div class="footer-links">
+      <a href="./index.html">Inicio</a>
+      <span aria-hidden="true">·</span>
+      <a href="politica-privacidad.html">Política de Privacidad</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:contacto@mendezsoluciones.com">contacto@mendezsoluciones.com</a>
+    </div>
+    <p class="footer-copy">&copy; <span id="year">2026</span> Méndez Soluciones. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<script>
+/* JS mínimo: año del pie + resaltado del índice. No afecta el contenido. */
+(function () {
+  'use strict';
+
+  var y = document.getElementById('year');
+  if (y) { y.textContent = new Date().getFullYear(); }
+
+  var links = document.querySelectorAll('.toc a[href^="#"]');
+  if (!links.length || !('IntersectionObserver' in window)) { return; }
+
+  var map = {};
+  links.forEach(function (a) {
+    var id = a.getAttribute('href').slice(1);
+    var sec = document.getElementById(id);
+    if (sec) { map[id] = a; }
+  });
+
+  var ids = Object.keys(map);
+  if (!ids.length) { return; }
+
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      var a = map[entry.target.id];
+      if (!a) { return; }
+      if (entry.isIntersecting) {
+        links.forEach(function (l) { l.classList.remove('is-active'); });
+        a.classList.add('is-active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -70% 0px', threshold: 0 });
+
+  ids.forEach(function (id) { observer.observe(document.getElementById(id)); });
+})();
+</script>
+
+</body>
+</html>
